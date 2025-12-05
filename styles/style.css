@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "yekan";
+  src: url(../assets/fonts/BYekan+.ttf);
+}
+body {
+  font-family: yekan;
+  background: #141313;
+  color: rgb(235, 234, 234);
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(163, 0, 0), rgb(249, 166, 0));
+  position: fixed;
+  z-index: 5;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.images img {
+  width: 100%;
+  height: 600px;
+  margin-top: 70px;
+}
+.new-shoes {
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.new-items {
+  width: 22%;
+  min-width: 235px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  margin: 15px 5px 0 5px;
+  height: 360px;
+  border: solid 2.5px rgb(103, 103, 103);
+  border-radius: 7px;
+  justify-content: space-around;
+}
+.new-items img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.special-shoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.new-items:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px 5px white;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+footer{
+    margin-top: 10px;
+    direction: rtl;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
